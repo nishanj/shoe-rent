@@ -1,10 +1,13 @@
 .jumbotron {
-    padding-top: 7px;
-    padding-bottom: 11px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    background-color: #67aeca;
+    background-image: url(../images/shoe1.jpeg);
+    color: white;
   }
   html, body{
 
-  background-color: #F1F5D4;
+  background-color: #FCF9F8;
 }
 marquee{
   color: #C0F79A;
@@ -23,7 +26,18 @@ h2{
 .panel-footer{
   background-color: #CB9B80;
 }
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 37px;
+    background-color: #67aeca;
+}
+.navbar{
+  background-color: #AB7A62;
 
+}
 /* carousel */
 .section{
   padding-bottom: 20px;
