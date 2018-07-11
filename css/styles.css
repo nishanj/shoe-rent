@@ -1,14 +1,29 @@
 .jumbotron {
-    padding-top: 7px;
-    padding-bottom: 11px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    background-color: #67aeca;
+    background-image: url(../images/shoe1.jpeg);
+    color: white;
   }
   html, body{
 
-  background-color: #C0F79A;
+  background-color: #FCF9F8;
 }
 marquee{
   color: #C0F79A;
 
+}
+.row{
+
+  list-style: none;
+
+}
+#social{
+  text-align: left;
+}
+h4{
+  text-align: left;
+  color: white;
 }
 h2{
   text-align: center;
@@ -16,8 +31,29 @@ h2{
 }
 #par{
   text-align: center;
+<<<<<<< HEAD
 
+=======
+}
+.panel-heading{
+  text-align: center;
+}
+.panel-footer{
+  background-color: #CB9B80;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 37px;
+    background-color: #67aeca;
+}
+.navbar{
+  background-color: #AB7A62;
+>>>>>>> jose
 
+}
 /* carousel */
 .section{
   padding-bottom: 20px;
@@ -32,7 +68,11 @@ h2{
 .carousel .item img{
     margin: 0 auto;
 }
-.fr-slide{
+.jos-slide{
 	margin: 10px;
 }
 /* carousel */
+
+.panel-body {
+    padding: 0px;
+}
