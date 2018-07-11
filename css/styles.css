@@ -2,3 +2,37 @@
     padding-top: 7px;
     padding-bottom: 11px;
   }
+  html, body{
+
+  background-color: #C0F79A;
+}
+marquee{
+  color: #C0F79A;
+
+}
+h2{
+  text-align: center;
+  padding-top: 10px;
+}
+#par{
+  text-align: center;
+}
+
+/* carousel */
+.section{
+  padding-bottom: 20px;
+}
+.carousel{
+    background: #F6FAD7;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px;
+  }
+.carousel .item img{
+    margin: 0 auto;
+}
+.fr-slide{
+	margin: 10px;
+}
+/* carousel */
