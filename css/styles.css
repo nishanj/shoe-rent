@@ -17,6 +17,12 @@ h2{
 #par{
   text-align: center;
 }
+.panel-heading{
+  text-align: center;
+}
+.panel-footer{
+  background-color: #CB9B80;
+}
 
 /* carousel */
 .section{
