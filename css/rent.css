@@ -4,4 +4,9 @@ div#uploading-colomn {
   border-style: dashed;
   padding-top: 200px;
   padding-left:200px;
+  margin-right: 100px;
+}
+div#uploading-form {
+  padding right: 100px;
+  padding-top: 50px;
 }
