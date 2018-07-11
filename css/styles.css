@@ -13,6 +13,18 @@ marquee{
   color: #C0F79A;
 
 }
+.row{
+
+  list-style: none;
+
+}
+#social{
+  text-align: left;
+}
+h4{
+  text-align: left;
+  color: white;
+}
 h2{
   text-align: center;
   padding-top: 10px;
