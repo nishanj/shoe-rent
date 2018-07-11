@@ -4,7 +4,7 @@
   }
   html, body{
 
-  background-color: #C0F79A;
+  background-color: #F1F5D4;
 }
 marquee{
   color: #C0F79A;
@@ -32,7 +32,11 @@ h2{
 .carousel .item img{
     margin: 0 auto;
 }
-.fr-slide{
+.jos-slide{
 	margin: 10px;
 }
 /* carousel */
+
+.panel-body {
+    padding: 0px;
+}
