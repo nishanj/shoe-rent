@@ -6,7 +6,9 @@ div#uploading-colomn {
   padding-left:200px;
   margin-right: 50px;
   margin-left: 10px;
-
+}
+body {
+  background-color: #5f0f4e;
 }
 
 div#product-row {
@@ -49,7 +51,7 @@ img {
   box-sizing: inherit;
 }
 div.crop-text {
-  max-width: 350px;
+  max-width: 290px;
 }
 .column {
   float: left;
@@ -57,33 +59,49 @@ div.crop-text {
   margin-bottom: 30px;
   margin-right: 50px;
   margin-left: 50px;
-  padding left : 5px;
+padding-bottom: 15px;
   max-height: 700px;
+  background-color: rgb(255, 255, 255, 80%);
+}
+.content {
+  width: 300px;
+  padding-left: 15px;
+
 }
 
+.add {
+  height: 400px;
+  text-align: center;
+  padding-top: 100px;
+
+}
+button#add {
+  background-color: rgb(255, 255, 255, 80%);
+  border: none;
+}
+.glyphicon-plus {
+  font-size: 300px;
+}
 @media screen and (max-width: 350px) {
   .column {
-    width: 0px;
+    width: 200px;
     display: block;
   }
 }
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 700px;
+  width: 350px;
 }
-
-
-
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
+  width: 340px;
 }
-
 .title {
   color: grey;
 }
-
 #edit {
   border: none;
   outline: 0;
