@@ -13,13 +13,18 @@ marquee{
   color: #C0F79A;
 
 }
+
+.icon{
+  text-align: center;
+  font-size: 20px;
+}
 .row{
 
   list-style: none;
 
 }
 #social{
-  text-align: left;
+  text-align: center;
 }
 h4{
   text-align: left;
