@@ -28,6 +28,8 @@
   background-color: black;
 }
 .carousel-inner {
+  height: 100%;
+  width: 100%;
   background-size: cover;
 }
 
@@ -80,7 +82,7 @@ p {
   margin: 20px;
   border-radius: 8px;
   margin-left: 70px;
-
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -96,6 +98,7 @@ p {
   background-color: #e52a6f;
   color: white;
   font-family: 'Quicksand', sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 h4 {
   color: #e52a6f;
@@ -117,7 +120,7 @@ background: #f1f1f1;
 
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: white;
   outline: none;
 }
 hr {
