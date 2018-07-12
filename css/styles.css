@@ -26,6 +26,15 @@ html, body{
 
 }
 
+
+}
+
+element.style {
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    width: 727px;
+    height: 350px;
 }
 #social{
   text-align: center;
@@ -46,6 +55,10 @@ h2{
 }
 .panel-heading{
   text-align: center;
+
+}
+.panel-body {
+    padding: 0;
 }
 .panel-footer{
   background-color: #CB9B80;
