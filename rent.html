@@ -4,27 +4,23 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
   <link href="css/rent.css" rel="stylesheet" type="text/css">
   <title>Rent</title>
 </head>
 <body>
   <div class="container" id="product-form">
     <div class="row" id="product-row">
-      <div class="col-xs-12 col-md-8" id="uploading-colomn">
+      <div class="col-xs-12 col-md-6" id="uploading-colomn">
         <form class="md-form">
           <div class="file-field big">
-            <a class="btn-floating btn-lg amber darken-2 mt-0 float-left">
-            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-            <input type="file" multiple>
+          <a>  <input type="file" multiple id="choose">
         </a>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text" placeholder="Upload photo">
-            </div>
-          </div>
       </form>
     </div>
+  </div>
 
-    <div class="col-xs-12 col-md-4" id="uploading-form">
+    <div class="col-xs-12 col-md-6" id="uploading-form">
       <form id="renting-form">
         <div class="form-group">
           <label for="product-name">Product Name :</label>
