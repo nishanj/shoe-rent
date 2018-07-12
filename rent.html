@@ -7,61 +7,58 @@
   <link href="css/rent.css" rel="stylesheet" type="text/css">
   <title>Rent</title>
 </head>
+
 <body>
+  <div class="container" id="portgal">
+  </div>
   <div class="container" id="product-form">
     <div class="row" id="product-row">
       <div class="col-xs-12 col-md-8" id="uploading-colomn">
-        <form class="md-form">
-          <div class="file-field big">
-            <a class="btn-floating btn-lg amber darken-2 mt-0 float-left">
-            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-            <input type="file" multiple>
-        </a>
-            
+        <input type="file" accept="image/*" onchange="showMyImage(this)" />
+        <br/>
+        <img id="thumbnil" src="" alt="image" />
+      </div>
+
+      <div class="col-xs-12 col-md-4" id="uploading-form">
+        <form id="renting-form">
+          <div class="form-group">
+            <label for="product-name">Product Name<abbr title="required">*</abbr>:</label>
+
+            <input type="text" class="form-group" required id="product-name">
+
           </div>
-      </form>
-    </div>
+          <div class="form-group">
+            <label for="product-description">Description :</label>
+            <input type="text" class="form-group" required id="product-description">
+          </div>
+          <div class="form-group">
+            <label for="product-size">Size<abbr title="required">*</abbr> :</label>
+            <input type="number" class="form-group" required id="product-size">
+          </div>
+          <div class="form-group">
+            <label for="product-color">Color :</label>
+            <input type="text" class="form-group" required id="product-color">
+          </div>
 
-    <div class="col-xs-12 col-md-4" id="uploading-form">
-      <form id="renting-form">
-        <div class="form-group">
-          <label for="product-name">Product Name<abbr title="required">*</abbr>:</label>
-
-          <input type="text" class="form-group" required id="product-name">
-
-        </div>
-        <div class="form-group">
-          <label for="product-description">Description :</label>
-          <input type="text" class="form-group" required id="product-description">
-        </div>
-        <div class="form-group">
-          <label for="product-size">Size<abbr title="required">*</abbr> :</label>
-          <input type="number" class="form-group" required id="product-size">
-        </div>
-        <div class="form-group">
-          <label for="product-color">Color :</label>
-          <input type="text" class="form-group" required id="product-color">
-        </div>
-
-        <!-- <input type="number" min="1" id="price" name="price" value="" placeholder="" class="" data-aut-id="inPrice">
+          <!-- <input type="number" min="1" id="price" name="price" value="" placeholder="" class="" data-aut-id="inPrice">
 <label></label> -->
-        <div class="form-group">
-          <label for="product-price">Suggested Price<abbr title="required">*</abbr> :</label>
-          <input type="number" class="form-group" required id="product-price">
-        </div>
-        <div class="form-group">
-          <label for="product-location">Location</label>
-          <input type="text" class="form-group" required id="product-location">
-        </div>
-        <button id="renting" class="btn" type="submit">Rent Out</button>
-      </form>
-      <button id="previewing" type="button" class="btn">Preview AD</button>
+          <div class="form-group">
+            <label for="product-price">Suggested Price<abbr title="required">*</abbr> :</label>
+            <input type="number" class="form-group" required id="product-price">
+          </div>
+          <div class="form-group">
+            <label for="product-location">Location</label>
+            <input type="text" class="form-group" required id="product-location">
+          </div>
+          <button id="renting" class="btn" type="submit">Rent Out</button>
+        </form>
+        <button id="previewing" type="button" class="btn">Preview AD</button>
 
+      </div>
     </div>
   </div>
-</div>
 
-<script src="js/rent.js"></script>
+  <script src="js/rent.js"></script>
   <script src="js/jquery.js"></script>
 </body>
 
