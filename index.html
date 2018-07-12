@@ -29,10 +29,10 @@
       <ul class="active nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
         <li class="active"><a href="rent.html">Rent a Shoe</a></li>
-        <li class="active"><a href="pay.html">Borrow a Shoe</a></li>
+        <li class="active"><a href="borrow.html">Borrow a Shoe</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="pay.html"><span class="glyphicon glyphicon-user"></span> User Account</a></li>
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> User Account</a></li>
         <li class="active"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
@@ -48,31 +48,14 @@
             <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
         </ol>
-
         <div class="carousel-inner">
             <div class="item active">
-                <img src="images/shoe3.jpeg" alt="Rent Shoe">
+                <img src="images/shoe1.jpeg" alt="Rent Shoe">
                 <div class="carousel-caption">
-                  <h3>Shoe</h3>
+                  <h3>Men's Shoe</h3>
                   <p>Rent a Shoe is always so much fun!!</p>
                 </div>
               </div>
-
-              <div class="item">
-                  <img src="images/shoe6.jpeg" alt="Rent Shoe">
-                  <div class="carousel-caption">
-                    <h3>Shoe</h3>
-                    <p>Rent a Shoe is always so much fun!!</p>
-                  </div>
-                </div>
-
-                  <div class="item">
-                      <img src="images/shoe5.jpeg" alt="Rent Shoe">
-                      <div class="carousel-caption">
-                        <h3>Shoe</h3>
-                        <p>Rent a Shoe is always so much fun!!</p>
-                      </div>
-                </div>
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
@@ -97,8 +80,9 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-primary">
-        <div class="panel-heading">Men's Shoe</div>
-        <div class="panel-body"><img src="images/shoe1.jpeg" class="img-responsive" alt="Shoe-1 Display"></div>
+        <div class="panel-heading">Shoe</div>
+        <div class="panel-body" id="panel1">
+          <img src="images/cara3.0.jpg" class="img-responsive" alt="Shoe-1 Display"></div>
         <div class="panel-footer">
           Rent Price: UGX <br>
           size:  <br>
@@ -110,8 +94,9 @@
 
     <div class="col-sm-4">
       <div class="panel panel-primary">
-        <div class="panel-heading">Kid's Shoe</div>
-        <div class="panel-body"><img src="images/shoe1.jpeg" class="img-responsive" alt="Image"></div>
+        <div class="panel-heading">Shoe</div>
+        <div class="panel-body" id="panel3">
+          <img src="images/cara2.jpg" class="img-responsive" alt="Image"></div>
         <div class="panel-footer">
           Rent Price: UGX <br>
           size:  <br>
@@ -120,8 +105,8 @@
     </div>
     <div class="col-sm-4">
       <div class="panel panel-primary">
-        <div class="panel-heading">Ladies Shoe</div>
-        <div class="panel-body"><img src="images/shoe1.jpeg" class="img-responsive"  alt="Image"></div>
+        <div class="panel-heading">Shoe</div>
+        <div class="panel-body" id="panel2"><img src="images/shoe6.jpeg" class="img-responsive"  alt="Image"></div>
         <div class="panel-footer">
           Rent Price: UGX <br>
           size:  <br>
@@ -134,10 +119,9 @@
 <footer class="container-fluid text-center">
   <div class="foot">
   <p>Online Shop</p>
-  <form class="form-inline" id="form1">
-    <label for="email"> Get Daily Updates:</label>
-    <input type="email" class="form-control" size="40" placeholder="Email Address" id="email">
-    <button type="button" class="btn btn-danger" id="submit">Sign Up</button>
+  <form class="form-inline">Get Daily Updates:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
   </div>
 </footer>
 
@@ -187,7 +171,5 @@
     <p>© 2018 Rent a Shoe. All Rights Reserved.</p>
   </div>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
 </body>
 </html>

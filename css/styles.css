@@ -26,19 +26,11 @@ html, body{
 
 }
 
-
-}
-
-element.style {
-}
-.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    display: block;
-    width: 727px;
-    height: 350px;
 }
 #social{
   text-align: center;
 }
+
 h4{
   text-align: center;
   color: white;
@@ -55,13 +47,10 @@ h2{
 }
 .panel-heading{
   text-align: center;
-
-}
-.panel-body {
-    padding: 0;
 }
 .panel-footer{
   background-color: #CB9B80;
+  padding: 0;
 }
 .container-fluid {
     padding-right: 15px;
@@ -98,10 +87,6 @@ h2{
 }
 /* carousel */
 
-.panel-body {
-    padding: 0px;
-}
-
 
 /* HEADER */
 header {
@@ -122,7 +107,7 @@ header {
 header:before {
   animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
   background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
-              url(../images/shoe5.jpeg) no-repeat bottom;
+              url(../images/shoe1.jpeg) no-repeat bottom;
   background-size: cover;
   content: "";
   opacity: 0;
@@ -137,11 +122,11 @@ header:before {
 header:after {
   background: #F9FCFF;
   content: "";
-  height: 40rem;
+  height: 20rem;
   left: -5%;
   position: absolute;
     right: -5%;
-    top: 90%;
+    top: 85%;
   transform-origin: 0 0;
   transform: rotateZ(-4deg);
   z-index: 0;
@@ -159,7 +144,7 @@ header:after {
 .header-button {
   transform: translateZ(.1px);
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
 
 /* Animations */
