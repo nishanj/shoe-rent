@@ -8,9 +8,7 @@ div#uploading-colomn {
   margin-left: 10px;
 
 }
-#choose {
-  border: none;
-}
+
 div#product-row {
   margin-left: 170px;
   padding-top: 20px;
@@ -27,13 +25,13 @@ div#uploading-form {
 
 }
 div#product-form {
+    background-image: url("../images/shoe1.jpeg");
+    background-size: cover;
 margin: 0px;
+background-repeat: no-repeat;
 
 }
-body {
-  background-image: url("../images/shoe1.jpeg");
-  background-size: cover;
-}
+
 input {
     border: none;
     border-bottom: 1px solid grey;
@@ -41,4 +39,64 @@ input {
 }
 input:hover {
   border-bottom: 2px solid red;
+}
+
+img {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+div.crop-text {
+  max-width: 350px;
+}
+.column {
+  float: left;
+  width: 350px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding left : 5px;
+  max-height: 700px;
+}
+
+@media screen and (max-width: 350px) {
+  .column {
+    width: 0px;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+#edit {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 30px;
+}
+
+.button:hover {
+  background-color: #555;
 }
