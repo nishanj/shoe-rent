@@ -11,6 +11,7 @@ html, body{
   background-image: url(../images/shoe1.jpeg);
   padding-bottom: 3%;
   padding-top: 3%;
+  background-color: #67aeca;
 }
 
 .foo3{
@@ -51,12 +52,13 @@ h2{
   padding: 0;
 }
 .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
     padding-top: 37px;
     background-color: #67aeca;
+
 }
 .navbar{
   background-color: #AB7A62;
@@ -115,6 +117,7 @@ header:before {
     bottom: 0;
     left: 0;
   z-index: -1;
+  background-color: #67aeca;
 }
 
 header:after {
