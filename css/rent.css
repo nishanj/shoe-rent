@@ -25,13 +25,13 @@ div#uploading-form {
 
 }
 div#product-form {
+    background-image: url("../images/shoe1.jpeg");
+    background-size: cover;
 margin: 0px;
+background-repeat: no-repeat;
 
 }
-body {
-  background-image: url("../images/shoe1.jpeg");
-  background-size: cover;
-}
+
 input {
     border: none;
     border-bottom: 1px solid grey;
@@ -39,4 +39,61 @@ input {
 }
 input:hover {
   border-bottom: 2px solid red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 350px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+#edit {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 30px;
+}
+
+.button:hover {
+  background-color: #555;
 }
