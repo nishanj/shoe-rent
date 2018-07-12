@@ -4,7 +4,8 @@
 .navbar-expand-lg {
   font-family: 'Caesar Dressing', cursive;
   font-size: 25px;
-  right: 10px;
+  margin-left: 200px;
+  margin-top: 30px;
   border-radius: 10px;
 
 }
@@ -23,6 +24,13 @@
   position: center;
 
 }
+#cara {
+  background-color: black;
+}
+.carousel-inner {
+  background-size: cover;
+}
+
 .menu-list li {
   display: inline;
   letter-spacing: 10px;
@@ -73,16 +81,25 @@ p {
   border-radius: 8px;
   margin-left: 70px;
 
+
 }
 
 .col-md-3 img {
   width: 280px;
   height: 280px;
   margin-left: 40px;
-  margin-right: 80px;
   margin-top: 10px;
   border-radius: 8px;
 
+}
+.get {
+  background-color: #e52a6f;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+h4 {
+  color: #e52a6f;
+  font-family: 'Quicksand', sans-serif;
 }
 span {
   font-size: 25px;
