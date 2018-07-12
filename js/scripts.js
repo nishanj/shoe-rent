@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // BUSINESS LOGIC
 //
 //
@@ -9,7 +9,7 @@
 $(document).ready(function(){
 $()
 })
-=======
+// =======
 function SignUp(email){
   this.email = email
 }
@@ -42,4 +42,4 @@ $(document).ready(function() {
 
     });
 });
->>>>>>> jose
+// >>>>>>> jose
