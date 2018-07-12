@@ -16,7 +16,12 @@ marquee{
 
 .icon{
   text-align: center;
-  font-size: 20px;
+
+}
+.foot{
+  background-image: url(../images/shoe1.jpeg);
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 .row{
 
