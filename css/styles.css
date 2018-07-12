@@ -30,6 +30,7 @@ html, body{
 }
 #social{
   text-align: center;
+  color: white;
 }
 
 h4{
@@ -52,17 +53,17 @@ h2{
   padding: 0;
 }
 .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0px;
+    padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 37px;
-    background-color: #67aeca;
+    padding-top: 0px;
+    background-color: gray;
 
 }
 .navbar{
   background-color: #AB7A62;
->>>>>>> jose
+
 
 }
 /* carousel */
@@ -93,14 +94,14 @@ header {
   align-items: center;
   display: flex;
   font-size: 18px;
-  height: 100vh;
+  height: 40vh;
   justify-content: center;
   overflow: hidden;
   position: relative;
   text-align: center;
   transform-style: preserve-3d;
   perspective: 100px;
-  padding-top: 11%;
+  padding-top: 2%;
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -127,7 +128,7 @@ header:after {
   left: -5%;
   position: absolute;
     right: -5%;
-    top: 85%;
+    top: 75%;
   transform-origin: 0 0;
   transform: rotateZ(-4deg);
   z-index: 0;
