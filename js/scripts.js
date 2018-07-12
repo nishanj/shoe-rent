@@ -1,55 +1,32 @@
-//Preload images first
-$.fn.preload = function() {
-    this.each(function(){
-        $('<img/>')[0].src = this;
-    });
+function SignUp(email){
+  this.email = email
 }
-var images = Array("http://placekitten.com/500/200",
-                   "http://placekitten.com/499/200",
-                   "http://placekitten.com/501/200",
-                   "http://placekitten.com/500/199");
 
-$([images[0],images[1],images[2],images[3]]).preload();
 
-// Usage:
 
-var currimg = 0;
+$(document).ready(function() {
 
-$(document).ready(function(){
+    $('#submit').click(function() {
+      event.preventDefault();
 
-    function loadimg(){
+        $(".error").show();
+        var hasError = false;
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
-       $('#background').animate({ opacity: 1 }, 500,function(){
+        var emailaddress = $("#email").val();
+        // var SignUp = new newEmail(emailaddress);
 
-            //finished animating, minifade out and fade new back in
-            $('#background').animate({ opacity: 0.7 }, 100,function(){
+        if(emailaddress == '') {
+            $("#email").after('<span class="error">Please enter your email address.</span>');
+            hasError = true;
+        }
 
-                currimg++;
+        else if(!emailReg.test(emailaddress)) {
+            $("#email").after('<span class="error">Enter a valid email address.</span>');
+            hasError = true;
+        }
+        $("#email").val();
+        if(hasError == true) { return false; }
 
-                if(currimg > images.length-1){
-
-                    currimg=0;
-
-                }
-
-                var newimage = images[currimg];
-
-                //swap out bg src
-                $('#background').css("background-image", "url("+newimage+")");
-
-                //animate fully back in
-                $('#background').animate({ opacity: 1 }, 400,function(){
-
-                    //set timer for next
-                    setTimeout(loadimg,5000);
-
-                });
-
-            });
-
-        });
-
-     }
-     setTimeout(loadimg,5000);
-
+    });
 });
