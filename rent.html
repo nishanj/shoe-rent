@@ -9,136 +9,151 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <h1>MY RENTING STUFF</h1>
-    <div class="row" id="portgal">
-      <div class="column">
-        
+  <header>
+    <h1>MY RENTING STUFF</h1></header>
+  <nav class="navbar navbar-pills">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="active nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="rent.html">Rent a Shoe</a></li>
+          <li class="active"><a href="pay.html">Borrow a Shoe</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="pay.html"><span class="glyphicon glyphicon-user"></span> User Account</a></li>
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="rent">
+    <div class="container-fluid">
+      <div class="row" id="portgal">
+        <div class="column">
           <img src="images/nikered.jpg" alt="Mike" style="width:90%">
           <div class="container content">
             <h2>Mike Ross</h2>
             <p class="title">Art Director</p>
-          <div class="crop-text"> <p>Some text that describes me lorem ipsum ipsum lorem.</p> </div>
+            <div class="crop-text">
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            </div>
             <p>example@example.com</p>
             <p><button type="submit" class="btn" id="edit">Edit</button></p>
-
-        
+          </div>
         </div>
-      </div>
 
-      <div class="column">
-
+        <div class="column">
           <img src="images/airforce.jpg" alt="Mike" style="width:90%">
           <div class="container content">
             <h2>Mike Ross</h2>
             <p class="title">Art Director</p>
-            <div class="crop-text"> <p>Some text that describes me lorem ipsum ipsum lorem.</p> </div>
+            <div class="crop-text">
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            </div>
             <p>example@example.com</p>
             <p><button type="submit" class="btn" id="edit">Edit</button></p>
-
-
+          </div>
         </div>
-      </div>
-      <div class="column">
 
+        <div class="column">
           <img src="images/airjordans.jpeg" alt="Mike" style="width:90%">
           <div class="container content">
             <h2>Mike Ross</h2>
             <p class="title">Art Director</p>
-            <div class="crop-text"> <p>Some text that describes me lorem ipsum ipsum lorem.</p> </div>
+            <div class="crop-text">
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            </div>
             <p>example@example.com</p>
             <p><button type="submit" class="btn" id="edit">Edit</button></p>
-
-
+          </div>
         </div>
-      </div>
-      <div class="column">
 
+        <div class="column">
           <img src="images/mowabb.jpg" alt="Mike" style="width:90%">
           <div class="container content">
             <h2>Mike Ross</h2>
             <p class="title">Art Director</p>
-            <div class="crop-text"> <p>Some text that describes me lorem ipsum ipsum lorem.</p> </div>
+            <div class="crop-text">
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            </div>
             <p>example@example.com</p>
             <p><button type="submit" class="btn" id="edit">Edit</button></p>
-
-
+          </div>
         </div>
-      </div>
-      <div class="column">
 
+        <div class="column">
           <img src="images/nikeblue.jpg" alt="Mike" style="width:90%;">
           <div class="container content">
             <h2>Mike Ross</h2>
             <p class="title">Art Director</p>
-            <div class="crop-text"> <p>Some text that describes me lorem ipsum ipsum lorem.</p> </div>
+            <div class="crop-text">
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            </div>
             <p>example@example.com</p>
             <p><button type="submit" class="btn" id="edit">Edit</button></p>
-
-
+          </div>
         </div>
-      </div>
-      <div class="column" id="add">
 
+        <div class="column" id="add">
           <div class="container content">
-
-          <div class="add"><button id="add"><span id="add"class="glyphicon glyphicon-plus"></span></button></div>
-</div>
+            <div class="add">
+              <button id="add" data-toggle="modal" data-target="#myModal"><span id="add"class="glyphicon glyphicon-plus"></span>Add Shoe</button></div>
           </div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <div class="container" id="product-form">
-    <form id="renting-form">
-      <div class="row" id="product-row">
-        <div class="col-xs-12 col-md-8" id="uploading-colomn">
-          <input type="file" accept="image/*" onchange="showMyImage(this)" />
-          <br/>
-          <img id="thumbnil" src="" alt="image" />
         </div>
-
-        <div class="col-xs-12 col-md-4" id="uploading-form">
-
-          <div class="form-group">
-            <label for="product-name">Product Name<abbr title="required">*</abbr>:</label>
-
-            <input type="text" class="form-group" required id="product-name">
-
-          </div>
-          <div class="form-group">
-            <label for="product-description">Description :</label>
-            <input type="text" class="form-group" required id="product-description">
-          </div>
-          <div class="form-group">
-            <label for="product-size">Size<abbr title="required">*</abbr> :</label>
-            <input type="number" class="form-group" required id="product-size">
-          </div>
-          <div class="form-group">
-            <label for="product-color">Color :</label>
-            <input type="text" class="form-group" required id="product-color">
-          </div>
-
-          <!-- <input type="number" min="1" id="price" name="price" value="" placeholder="" class="" data-aut-id="inPrice">
-<label></label> -->
-          <div class="form-group">
-            <label for="product-price">Suggested Price<abbr title="required">*</abbr> :</label>
-            <input type="number" class="form-group" required id="product-price">
-          </div>
-          <div class="form-group">
-            <label for="product-location">Location</label>
-            <input type="text" class="form-group" required id="product-location">
-          </div>
-          <button id="renting" class="btn" type="submit">Rent Out</button>
-    </form>
-    <button id="previewing" type="button" class="btn">Preview AD</button>
-
+      </div>
     </div>
     </div>
-  </div>
+  </section>
+
+  <!-- form -->
+  <section id="adding-form">
+    <div class="container" id="product-form">
+      <form id="renting-form">
+
+            <div class="form-group">
+              <label for="product-name">Product Name<abbr title="required">*</abbr>:</label>
+              <input type="text" class="form-group" required id="product-name">
+            </div>
+
+            <div class="form-group">
+              <label for="product-description">Description :</label>
+              <input type="text" class="form-group" required id="product-description">
+            </div>
+
+            <div class="form-group">
+              <label for="product-size">Size<abbr title="required">*</abbr> :</label>
+              <input type="number" class="form-group" required id="product-size">
+            </div>
+
+            <div class="form-group">
+              <label for="product-color">Color :</label>
+              <input type="text" class="form-group" required id="product-color">
+            </div>
+
+            <div class="form-group">
+              <label for="product-price">Suggested Price<abbr title="required">*</abbr> :</label>
+              <input type="number" class="form-group" required id="product-price">
+            </div>
+
+            <div class="form-group">
+              <label for="product-location">Location</label>
+              <input type="text" class="form-group" required id="product-location">
+            </div>
+            <div class="form-group">
+<label for="fileuplaod">Select a photo to upload</label>
+              <input type="file" name="fileupload" value="fileupload" id="fileupload" accept="image/*" onchange="showMyImage(this)" />
+
+              <br/>
+              <img id="thumbnil" src="" alt="image" />
+</div>
+              <button id="renting" class="btn" type="submit">Rent Out</button>
+      </form>
+      </div>
+  </section>
+  <aside></aside>
   <script src="js/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/rent.js"></script>
 
 </body>
