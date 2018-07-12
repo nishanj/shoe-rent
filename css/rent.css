@@ -1,0 +1,44 @@
+div#uploading-colomn {
+  height:500px;
+  width: 500px;
+  border-style: dashed;
+  padding-top: 200px;
+  padding-left:200px;
+  margin-right: 50px;
+  margin-left: 10px;
+
+}
+#choose {
+  border: none;
+}
+div#product-row {
+  margin-left: 170px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 1000px;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255, 80%);
+  box-shadow: 0.1px 0px 1px 3px rgb(224, 222, 222);
+}
+div#uploading-form {
+  padding right: 10px;
+  padding-top: 10px;
+  flex: 10%;
+
+}
+div#product-form {
+margin: 0px;
+
+}
+body {
+  background-image: url("../images/shoe1.jpeg");
+  background-size: cover;
+}
+input {
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: rgb(255, 255, 255, 0%);
+}
+input:hover {
+  border-bottom: 2px solid red;
+}
