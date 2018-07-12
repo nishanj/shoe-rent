@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=divice-width">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-  <link rel="stylesheet" href="css/pay.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Caesar+Dressing|Alfa+Slab+One|Raleway" rel="stylesheet">
 
   <title>Renter</title>
@@ -42,3 +42,199 @@
     </div>
 
   </nav>
+  <hr>
+  <div class="row">
+
+    <div class="col-md-6">
+      <div id="item-carousel" class="carousel slide" data-ride="carousel">
+        <!--Carousel Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#item-carousel" data-slide-to="0" class="active-carousel"></li>
+          <li data-target="#item-carousel" data-slide-to="1" class="active-carousel"></li>
+          <li data-target="#item-carousel" data-slide-to="2" class="active-carousel"></li>
+        </ol>
+
+        <!--Wrapper for slides-->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/shoe400.jpg">
+          </div>
+          <div class="item">
+            <img src="img/shoe2400.jpg">
+          </div>
+          <div class="item">
+            <img src="img/shoe3400.jpg">
+          </div>
+
+        </div>
+        <!--Left and Right Controls-->
+        <a class="left carousel-control" href="#item-carousel" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left"></span>
+           <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#item-carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+           <span class="sr-only">Next</span>
+       </a>
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6">
+      <h2 class="item-name">Givenchy Dion&reg</h2>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+        up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+        Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a
+        line in section 1.10.32.</p>
+
+      <button type="button" class="btn btn-buy"><a href="#"><span>$196</span> add to Cart</a></button>
+      <button type="button" class="btn btn-buy"><a href="#">Check more</a></button>
+    </div>
+
+
+  </div>
+
+  <form class="form-class" action="index.html" method="post">
+    <div class="container signup-con">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account</p>
+      <label for="email">Email</label>
+      <input type="text" placeholder="Enter email" name="email" class="form-control" required>
+
+      <label for="psw">Password</label>
+      <input type="password" placeholder="Password" class="form-control" required>
+
+      <label for="psw-repeat">Repeat Password</label>
+      <input type="password" name="psw-repeat" class="form-control" placeholder="Repeat Password" required>
+
+      <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember me</label>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+
+      <div class="clearfix">
+        <button type="button" class="cancel btn">Cancel</button>
+        <button type="submit" class="signup btn">Sign Up</button>
+      </div>
+
+
+
+    </div>
+  </form>
+
+
+  <br>
+  <hr>
+  <br>
+
+
+  <div class="row checkout-row">
+    <div class="col-75">
+      <div class="container checkout-con">
+
+        <form action="index.html">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" class="form-control" placeholder="John Doe">
+
+              <label for="email"> <i class="fa fa-envelope"></i> Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="john@example.com">
+
+              <label for="adr"> <i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" name="address" id="adr" class="form-control" placeholder="678 W.A Bombo Road">
+
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" name="city" id="city" class="form-control" placeholder="Kampala">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" name="state" id="state" class="form-control" placeholder="KLA">
+                </div>
+
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" name="zip" id="zip" class="form-control" placeholder="10001">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+
+              <label for="cname">Name on Card</label>
+              <input type="text" name="cardname" id="cname" class="form-control" placeholder="John More Doe">
+
+              <label for="ccnum">Credit Card Number</label>
+              <input type="text" id="ccnum" name="cardnumber" class="form-control" placeholder="1111-2222-3333-4444">
+
+              <label for="expmonth">Exp Month</label>
+              <input type="text" name="expmonth" id="expmonth" class="form-control" placeholder="September">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" name="expyear" id="expyear" class="form-control" placeholder="2018">
+                </div>
+
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" name="cvv" id="cvv" class="form-control" placeholder="356">
+                </div>
+              </div>
+
+            </div>
+
+            <label> <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing</label>
+            <input type="submit" name="" value="Continue to checkout" class="btn">
+
+
+
+
+
+
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart
+          <span class="price">
+            <i class="fa fa-shopping-cart"></i>
+            <b>4</b>
+          </span>
+        </h4>
+        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+        <p><a href="#">Product 2</a> <span class="price">$25</span></p>
+        <p><a href="#">Product 3</a> <span class="price">$18</span></p>
+        <p><a href="#">Product 4</a> <span class="price">$10</span></p>
+        <hr>
+        <p>Total <span class="price"><b>$30</b></span></p>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

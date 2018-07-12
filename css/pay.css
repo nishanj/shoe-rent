@@ -32,3 +32,131 @@ a:hover {
   color: red;
   text-decoration: none;
 }
+.item-name {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+.btn-buy {
+  background-color: white;
+  color: red;
+  border-color: red;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+}
+.btn-buy a {
+  color: red;
+  text-decoration: none;
+  transition: transform .1s;
+}
+.btn-buy:hover{
+  transform: scale(1.08);
+}
+span {
+  font-size: 25px;
+}
+* {box-sizing: border-box}
+
+input {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button.cancel {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button.signup {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.signup-con {
+  padding: 16px;
+}
+.cancel, .signup {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 300px) {
+  .cancel, .signup {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 16px;
+
+}
+.col-25 {
+  flex: 25%;
+}
+.col-50 {
+  flex: 50%
+}
+.col-75 {
+  flex: 75%
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+.checkout-con {
+  background-color: #f8f8f8;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+span.price {
+  float: right;
+  color: greyhtml, body{
+
+  background-color: #C0F79A;
+}
