@@ -178,6 +178,11 @@ header:after {
 .header-title, .header-subtitle {
   color: #fff;
   font-family: 'Ultra', serif;
+
+}
+.header-subtitle{
+  font-family: 'Comfortaa', cursive;
+  font-size: 24px;
 }
 
 #jk{
@@ -218,6 +223,8 @@ header:after {
   transform: translateZ(.1px);
   position: relative;
   z-index: 5;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
 }
 
 /* Animations */
