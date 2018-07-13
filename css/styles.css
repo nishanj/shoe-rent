@@ -93,7 +93,9 @@ p{
   height: 500px;
 }
 #moo{
-  background-color: gray;
+  background-color: rgb(103,174,202,0.9);
+  height: 200px;
+  padding-top: 20px;
 }
 #my{
 
@@ -286,4 +288,17 @@ header:after {
 
 #overlaying:hover .overlay {
   opacity: 1;
+}
+#image-col {
+  width: 350px;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+#boxes {
+  margin-bottom: 100px;
+  background-color: rgb(229,42,111,0.1);
+  padding-bottom: 50px;
+}
+#subscribe {
+  margin-bottom: 100px;
 }
