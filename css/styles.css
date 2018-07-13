@@ -9,8 +9,11 @@ font-family: 'Comfortaa', cursive;
   padding-bottom: 20px;
   margin-top: 30px;
   margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 
 .icon{
   text-align: center;
@@ -80,20 +83,22 @@ p{
   color: black;
 }
 .navbar{
-  background-color: rgb(103,174,202, 0.7)
+  background-color: rgb(103,86,130, 0.4)
 
 
 }
 .myCarousel{
   margin-top: 0px;
   margin-bottom: 0px;
+  height: 500px;
 }
 #moo{
   background-color: gray;
 }
 #my{
-  margin-bottom: 0;
-  color: #
+
+  margin-bottom: 50px;
+
 }
 /* carousel */
 .section{
@@ -119,7 +124,7 @@ p{
   padding-bottom: 0px;
 }
 #jm{
-  background-color: rgb(0,0,0,0.2);
+  /* background-color: rgb(103,174,202,0.5); */
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
