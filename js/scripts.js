@@ -1,14 +1,95 @@
+function login(event) {
 
-$(document).ready(function(){
-	$("#btn").click(function(){
-		event.preventDefault();
+  event.preventDefault();
+
+  var json = {
+    username : $('#user_id').val(),
+    password : $('#pass_id').val()
+  };
+
+  var URL = "http://192.168.1.63:8000/weather/login/";
+  $.ajax({
+    url : URL,
+    type: "POST",
+    data: JSON.stringify(json),
+    contentType: "application/json",
+    xhrFields: {
+      withCredentials: true
+    },
+  }).success(function(res) {
+    $('#log_form').css({ 'display' : 'none' });
+    $('#logged_user').css({ 'display' : 'block' });
+    $('#logged_user').text( json.username );
+    $('#logout_button').css({ 'display' : 'block' });
+    hide_error();
+  }).error(function(res) {
+    $('#error_text').text("User/password is incorrect");
+    $('#error').css({ 'display' : '' });
+  });
+});
 
 
-	})
-
-})
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function(){
+// 	$(".login").click(function(){
+// 		event.preventDefault();
+// 		if( $("#loginusername").val()=='' && $("#loginpassword").val()=='password') {
+// 			$("#first").hide();
+// 			$("#second").show();
+// 			$("#second").append("<p>Hello, admin</p> <br/><input type='button' class='logout' value='Log Out' />");
+// 		}
+// 		else {
+// 			alert("Please try again");
+//                 }
+// 								$(".logout").click(function() {
+//                 $("form")[0].reset();
+//                 $("#second").children('p, input').remove();
+//                 $("#first").show();
+//                 $("#second").hide();
+//              });
+//          });
+
+     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function(){
+// 	$("#btn").click(function(){
+// 		event.preventDefault();
+//
+//
+// 	})
+//
+// })
+//
+//
 
 
 
