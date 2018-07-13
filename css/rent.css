@@ -10,39 +10,19 @@ section#rent {
     padding-top: 50px;
     margin bottom: 50px;
 }
-section#adding-form {
-  margin-top: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  margin-top: 100px;
-  background-color: rgb(255, 255, 255, 80%);
-  box-shadow: 0.1px 0px 1px 3px rgb(224, 222, 222);
-
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
 }
 
-div#uploading-colomn {
-  height:300px;
-  width: 300px;
-  border-style: dashed;
-  padding-top: 200px;
-  padding-left:200px;
-  margin-right: 50px;
-  margin-left: 10px;
+.modal-header, .modal-body {
+    padding: 40px 50px;
 }
-div#product-form {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-div#product-row {
 
 
-}
-div#uploading-form {
 
-  flex: 10%;
-
-}
 input {
     border: none;
     border-bottom: 1px solid grey;
