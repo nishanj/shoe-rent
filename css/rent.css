@@ -6,7 +6,7 @@ header {
     color: white;
 }
 section#rent {
-    background-color: #5f0f4e;
+    background-color: #ffffff;
     padding-top: 50px;
     margin bottom: 50px;
 }
@@ -50,7 +50,7 @@ div.crop-text {
   margin-left: 50px;
 padding-bottom: 15px;
   max-height: 700px;
-  background-color: rgb(255, 255, 255, 80%);
+  background-color: rgb(103, 86, 130,0.7);
 }
 .content {
   width: 300px;
@@ -94,7 +94,7 @@ button#add {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: rgb(229, 42, 111);
   text-align: center;
   cursor: pointer;
   width: 250px;
