@@ -138,6 +138,35 @@ header:after {
   color: #fff;
 }
 
+#jk{
+  margin-top: 0px;
+}
+#kj{
+  margin-bottom: 0px;
+}
+#jk1{
+  margin-top: 0px;
+}
+#kj1{
+  margin-bottom: 0px;
+}
+#jk2{
+  margin-top: 0px;
+}
+#kj2{
+  margin-bottom: 0px;
+}
+#jk3{
+  margin-top: 0px;
+  
+}
+#kj3{
+  margin-bottom: 0px;
+}
+
+
+
+
 .header-subtitle {
   text-transform: uppercase;
   margin-bottom: 5rem;
