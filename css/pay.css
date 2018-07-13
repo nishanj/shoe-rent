@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+#checked-out {
+  display: none;
+}
 .navbar-expand-lg {
   font-family: 'Caesar Dressing', cursive;
   font-size: 25px;
