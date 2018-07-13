@@ -187,7 +187,7 @@
               <br/>
               <img id="thumbnil" src="" alt="image" />
             </div>
-            <button id="renting" class="btn btn-block" type="submit" data-dismiss="modal">Rent Out <span class="glyphicon glyphicon-ok"></span></button>
+            <button id="renting" class="btn btn-block" type="submit" data-dismiss="modal" data-toggle="modal" data-target="#submitted">Rent Out <span class="glyphicon glyphicon-ok"></span></button>
           </form>
         </div>
 
@@ -196,6 +196,19 @@
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
          <span class="glyphicon glyphicon-remove"></span> Cancel
        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="submitted" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4> Submission</h4>
+        </div>
+        <div class="modal-body">
+          <h2>Your Request has been submitted. Thank you!</h2>
         </div>
       </div>
     </div>
