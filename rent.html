@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="css/rent.css" rel="stylesheet" type="text/css">
   <title>Rent</title>
@@ -20,7 +21,7 @@
           <li class="active"><a href="pay.html">Borrow a Shoe</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="pay.html"><span class="glyphicon glyphicon-user"></span> User Account</a></li>
+
           <li class="active"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
         </ul>
       </div>
@@ -39,9 +40,38 @@
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
             </div>
             <p>example@example.com</p>
-            <p><button type="submit" class="btn" id="edit">Edit</button></p>
+            <p><button type="submit" class="btn" id="edit" data-toggle="modal" data-target="#myStatus-borrowed">Status</button></p>
           </div>
         </div>
+
+        <div class="modal fade" id="myStatus-borrowed" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4> Status</h4>
+              </div>
+              <div class="modal-body">
+                <h2>BORROWED!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- available status -->
+        <div class="modal fade" id="myStatus-available" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4> Status</h4>
+              </div>
+              <div class="modal-body">
+                <h2>AVAILABLE!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="column">
           <img src="images/airforce.jpg" alt="Mike" style="width:90%">
@@ -52,7 +82,7 @@
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
             </div>
             <p>example@example.com</p>
-            <p><button type="submit" class="btn" id="edit">Edit</button></p>
+            <p><button type="submit" class="btn" id="edit"data-toggle="modal" data-target="#myStatus-available">Status</button></p>
           </div>
         </div>
 
@@ -65,7 +95,7 @@
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
             </div>
             <p>example@example.com</p>
-            <p><button type="submit" class="btn" id="edit">Edit</button></p>
+            <p><button type="submit" class="btn" id="edit" data-toggle="modal" data-target="#myStatus-borrowed">Status</button></p>
           </div>
         </div>
 
@@ -78,7 +108,7 @@
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
             </div>
             <p>example@example.com</p>
-            <p><button type="submit" class="btn" id="edit">Edit</button></p>
+            <p><button type="submit" class="btn" id="edit" data-toggle="modal" data-target="#myStatus-borrowed">Status</button></p>
           </div>
         </div>
 
@@ -91,9 +121,10 @@
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
             </div>
             <p>example@example.com</p>
-            <p><button type="submit" class="btn" id="edit">Edit</button></p>
+            <p><button type="submit" class="btn" id="edit" data-toggle="modal" data-target="#myStatus-available">Status</button></p>
           </div>
         </div>
+        <
 
         <div class="column" id="add">
           <div class="container content">
@@ -107,9 +138,19 @@
   </section>
 
   <!-- form -->
-  <section id="adding-form">
-    <div class="container" id="product-form">
-      <form id="renting-form">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4> Add Item</h4>
+        </div>
+        <div class="modal-body">
+
+          <form id="renting-form" role="form">
 
             <div class="form-group">
               <label for="product-name">Product Name<abbr title="required">*</abbr>:</label>
@@ -118,7 +159,7 @@
 
             <div class="form-group">
               <label for="product-description">Description :</label>
-              <input type="text" class="form-group" required id="product-description">
+              <input type="text" class="form-group" id="product-description">
             </div>
 
             <div class="form-group">
@@ -128,7 +169,7 @@
 
             <div class="form-group">
               <label for="product-color">Color :</label>
-              <input type="text" class="form-group" required id="product-color">
+              <input type="text" class="form-group" id="product-color">
             </div>
 
             <div class="form-group">
@@ -138,20 +179,44 @@
 
             <div class="form-group">
               <label for="product-location">Location</label>
-              <input type="text" class="form-group" required id="product-location">
+              <input type="text" class="form-group" id="product-location">
             </div>
             <div class="form-group">
-<label for="fileuplaod">Select a photo to upload</label>
+              <label for="fileuplaod">Select a photo to upload</label>
               <input type="file" name="fileupload" value="fileupload" id="fileupload" accept="image/*" onchange="showMyImage(this)" />
 
               <br/>
               <img id="thumbnil" src="" alt="image" />
-</div>
-              <button id="renting" class="btn" type="submit">Rent Out</button>
-      </form>
+            </div>
+            <button id="renting" class="btn btn-block" type="submit" data-dismiss="modal" data-toggle="modal" data-target="#submitted">Rent Out <span class="glyphicon glyphicon-ok"></span></button>
+          </form>
+        </div>
+
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+         <span class="glyphicon glyphicon-remove"></span> Cancel
+       </button>
+        </div>
       </div>
-  </section>
-  <aside></aside>
+    </div>
+  </div>
+  <div class="modal fade" id="submitted" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4> Submission</h4>
+        </div>
+        <div class="modal-body">
+          <h2>Your Request has been submitted. Thank you!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foo3">
+      <p>© 2018 Rent a Shoe. All Rights Reserved.</p>
+    </div>
   <script src="js/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/rent.js"></script>
