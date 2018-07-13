@@ -1,7 +1,16 @@
-html, body{
+body{
+/* font-family: 'Merienda', cursive; */
+font-family: 'Comfortaa', cursive;
+/* background-color: yellow; */
 
-  /* background-color: #FCF9F8; */
 }
+#hou{
+  box-shadow: 0.1px 0px 1px 3px rgb(224,222,222);
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 .icon{
   text-align: center;
