@@ -2,31 +2,28 @@
   box-sizing: border-box;
 }
 #checked-out {
+
+  font-family: 'Quicksand', sans-serif;
+}
+#form-id {
   display: none;
 }
-.navbar-expand-lg {
-  font-family: 'Caesar Dressing', cursive;
-  font-size: 25px;
-  margin-left: 200px;
-  margin-top: 30px;
-  border-radius: 10px;
 
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
 }
-.navbar-expand-lg:hover {
-  background-color: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+#myNavbar {
+  font-family: 'Comfortaa', cursive;
 }
-.nav-list {
-  display: table;
-  float: center;
-  text-align: center;
+.gly {
+  float: right;
+}
 
-}
-.menu-list {
-  list-style: none;
-  display: inline-block;
-  position: center;
-
-}
 #cara {
   background-color: black;
 }
@@ -40,6 +37,10 @@
   display: inline;
   letter-spacing: 10px;
 }
+label {
+  font-size: 20px;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -49,19 +50,19 @@ a:hover {
   text-decoration: none;
 }
 .item-name {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 40px;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Original Surfer', cursive;
 }
 .btn-buy {
   background-color: white;
   color: red;
   border-color: red;
   border-radius: 4px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Original Surfer', cursive;
 }
 .btn-buy a {
   color: red;
@@ -89,6 +90,9 @@ p {
 
 }
 
+.icon-container img {
+
+}
 .col-md-3 img {
   width: 280px;
   height: 280px;
@@ -182,6 +186,10 @@ button:hover {
 }
 .col-50 {
   flex: 50%
+}
+.col-50 h3 {
+  font-style: bold;
+  font-size: 30px;
 }
 .col-75 {
   flex: 75%
