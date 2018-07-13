@@ -1,12 +1,15 @@
+body {
+  font-family: 'Comfortaa', cursive;
+}
 header {
-    background-color: #666;
+    background-color: #5f0f4e;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
 section#rent {
-    background-color: #5f0f4e;
+    background-color: #ffffff;
     padding-top: 50px;
     margin bottom: 50px;
 }
@@ -60,8 +63,8 @@ div.crop-text {
   margin-left: 50px;
 padding-bottom: 15px;
   max-height: 700px;
-  background-color: rgb(255, 255, 255, 80%);
-  box-shadow: 0.1px 0px 1px 3px rgb(224, 222, 222);
+  background-color: rgb(95, 15, 78,0.4);
+  /* box-shadow: 0.1px 0px 1px 3px rgb(224, 222, 222); */
 }
 .content {
   width: 300px;
@@ -105,7 +108,7 @@ button#add {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: rgb(229, 42, 111);
   text-align: center;
   cursor: pointer;
   width: 250px;
