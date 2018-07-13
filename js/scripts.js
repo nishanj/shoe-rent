@@ -1,32 +1,4 @@
-function login(event) {
 
-  event.preventDefault();
-
-  var json = {
-    username : $('#user_id').val(),
-    password : $('#pass_id').val()
-  };
-
-  var URL = "http://192.168.1.63:8000/weather/login/";
-  $.ajax({
-    url : URL,
-    type: "POST",
-    data: JSON.stringify(json),
-    contentType: "application/json",
-    xhrFields: {
-      withCredentials: true
-    },
-  }).success(function(res) {
-    $('#log_form').css({ 'display' : 'none' });
-    $('#logged_user').css({ 'display' : 'block' });
-    $('#logged_user').text( json.username );
-    $('#logout_button').css({ 'display' : 'block' });
-    hide_error();
-  }).error(function(res) {
-    $('#error_text').text("User/password is incorrect");
-    $('#error').css({ 'display' : '' });
-  });
-});
 
 
 
