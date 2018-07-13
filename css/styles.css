@@ -79,6 +79,9 @@ p{
   margin-top: 0px;
   margin-bottom: 0px;
 }
+#moo{
+  background-color: gray;
+}
 #my{
   margin-bottom: 0;
   color: #
@@ -174,6 +177,7 @@ header:after {
 
 .header-title, .header-subtitle {
   color: #fff;
+  font-family: 'Ultra', serif;
 }
 
 #jk{
